@@ -1,5 +1,8 @@
 
+pasta 002 -> react-basico
 
+no terminal:
+    npm start
 
 
 
