@@ -6,7 +6,7 @@ no terminal:
 
 
 
-
+não adiciona ao state ainda
 
 
 
