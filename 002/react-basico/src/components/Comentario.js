@@ -3,6 +3,7 @@ import React from 'react'
 import './Comentario.css'
 
 const Comentario = (props) => {
+   //props.nome = 'Simon'  // dá erro
    
    return (
         <div className="Comentario" >
