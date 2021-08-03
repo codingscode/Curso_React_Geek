@@ -16,19 +16,12 @@ class App extends Component {
       return (
          <div>
            <div>Oi</div>
-           {this.state.comentarios.map(cada => (
-               console.log(cada)
+           {this.state.comentarios.map((cada, indice) => (
+               
+               <Comentario nome={cada.nome} email={cada.email} data={cada.data} key={indice} >
+                  {cada.mensagem}
+               </Comentario>
            ))}
-
-           <Comentario nome="Samuel" email="samueldj@gmail.com" data={new Date(2021, 3, 14)} >
-              Olá tudo legal
-           </Comentario>
-           <Comentario nome="Angela" email="angeliscosmeticos@gmail.com" data={new Date(2020, 5, 10)} >
-              Tá de boa
-           </Comentario>
-           <Comentario nome="Michael" email="michel21@gmail.com" data={new Date(2019, 7, 23)} >
-              Beleza
-           </Comentario>
    
          </div> 
       )
