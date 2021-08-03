@@ -19,10 +19,12 @@ class App extends Component {
          nome: 'Silas', email: 'silas@gmail.com', data: new Date(), mensagem: 'bacana!'
       }
       
-      let lista = this.state.comentarios
+      /* let lista = this.state.comentarios
       lista.push(novoComentario)
-
-      this.setState({comentarios: lista})
+      this.setState({comentarios: lista}) */
+      this.setState({
+         comentarios: [...this.state.comentarios, novoComentario]
+      })
    }
 
    render() {
