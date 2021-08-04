@@ -23,18 +23,14 @@ class App extends Component {
          nome: 'Silas', email: 'silas@gmail.com', data: new Date(), mensagem: 'bacana!'
       }
       
-      /* let lista = this.state.comentarios
-      lista.push(novoComentario)
-      this.setState({comentarios: lista}) */
       this.setState({
          comentarios: [...this.state.comentarios, novoComentario]
       })
    }
 
    digitacaodoNome = evento => {
-      console.log(evento)
-      console.log(evento.target)
-      console.log(evento.target.value)
+      const valor = evento.target.value
+      this.setState({ novoComentario: {...this.state.novoComentario, nome: valor} })
    }
 
    render() {

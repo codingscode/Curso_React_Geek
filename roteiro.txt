@@ -18,6 +18,50 @@ ainda nao é possivel alterar valores nas entradas campos
 
 imprimi mas nao atualiza o estado
 
+seta o campo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
