@@ -28,9 +28,10 @@ class App extends Component {
       })
    }
 
-   digitacaodoNome = evento => {
+   digitacao = evento => {
       const valor = evento.target.value
-      this.setState({ novoComentario: {...this.state.novoComentario, nome: valor} })
+      const nome_campo = evento.target.name
+      this.setState({ novoComentario: {...this.state.novoComentario, [nome_campo]: valor} })
    }
 
    render() {
@@ -47,13 +48,13 @@ class App extends Component {
             <form method="post" onSubmit={this.adicionarComentario} >
                <h2>Adicionar Comentário</h2>
                <div >
-                  <input type="text" name="nome" placeholder="Digite seu nome" value={this.state.novoComentario.nome} onChange={this.digitacaodoNome} />
+                  <input type="text" name="nome" placeholder="Digite seu nome" value={this.state.novoComentario.nome} onChange={this.digitacao} />
                </div>
                <div >
-                  <input type="email" name="email" placeholder="Digite seu email" value={this.state.novoComentario.email} />
+                  <input type="email" name="email" placeholder="Digite seu email" value={this.state.novoComentario.email} onChange={this.digitacao} />
                </div>
                <div >
-                  <textarea name="mensagem" rows="4" value={this.state.novoComentario.mensagem} />
+                  <textarea name="mensagem" rows="4" value={this.state.novoComentario.mensagem} onChange={this.digitacao} />
                </div>
                <button type="submit" >Adicionar Comentário</button>
             </form>
