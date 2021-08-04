@@ -29,8 +29,8 @@ class App extends Component {
    }
 
    digitacao = evento => {
-      const valor = evento.target.value
-      const nome_campo = evento.target.name
+      const { value, name } = evento.target
+      const [ valor, nome_campo ] = [ value, name ]
       this.setState({ novoComentario: {...this.state.novoComentario, [nome_campo]: valor} })
    }
 
