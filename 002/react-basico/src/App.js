@@ -33,13 +33,19 @@ class App extends Component {
       this.setState({ novoComentario: {...this.state.novoComentario, [nome_campo]: valor} })
    }
 
+   removerComentario = comentario => {
+      let lista = this.state.comentarios
+      lista = lista.filter(c => c !== comentario)
+      this.setState({ comentarios: lista })
+   }
+
    render() {
       return (
          <div>
            <div>Oi</div>
            {this.state.comentarios.map((cada, indice) => (
                
-               <Comentario nome={cada.nome} email={cada.email} data={cada.data} key={indice} >
+               <Comentario nome={cada.nome} email={cada.email} data={cada.data} key={indice} Remover={this.removerComentario.bind(this, cada)} >
                   {cada.mensagem}
                </Comentario>
            ))}
