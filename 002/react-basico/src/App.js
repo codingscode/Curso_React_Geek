@@ -9,10 +9,14 @@ class App extends Component {
          {nome: 'Samuel', email: 'samueldj@gmail.com', data: new Date(2021, 3, 14), mensagem: 'Olá tudo legal'},
          {nome: 'Angela', email: 'angeliscosmeticos@gmail.com', data: new Date(2020, 5, 10), mensagem: 'Tá de boa'},
          {nome: 'Michael', email: 'michel21@gmail.com', data: new Date(2019, 7, 23), mensagem: 'Beleza'}
-      ]
+      ],
+      novoComentario: {
+         nome: '', email: '', mensagem: ''
+      }
    }
 
-   adicionarComentario = () => {
+   adicionarComentario = (evento) => {
+      evento.preventDefault()
       console.log('Adicionando comentário...')
 
       const novoComentario = {
@@ -41,13 +45,13 @@ class App extends Component {
             <form method="post" onSubmit={this.adicionarComentario} >
                <h2>Adicionar Comentário</h2>
                <div >
-                  <input type="text" name="nome" placeholder="Digite seu nome" />
+                  <input type="text" name="nome" placeholder="Digite seu nome" value={this.state.novoComentario.nome} />
                </div>
                <div >
-                  <input type="email" name="email" placeholder="Digite seu email" />
+                  <input type="email" name="email" placeholder="Digite seu email" value={this.state.novoComentario.email} />
                </div>
                <div >
-                  <textarea name="mensagem" rows="4" />
+                  <textarea name="mensagem" rows="4" value={this.state.novoComentario.mensagem} />
                </div>
                <button type="submit" >Adicionar Comentário</button>
             </form>
