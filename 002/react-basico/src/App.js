@@ -22,7 +22,8 @@ class App extends Component {
       const novoComentario = {...this.state.novoComentario, data: new Date()}
       
       this.setState({
-         comentarios: [...this.state.comentarios, novoComentario]
+         comentarios: [...this.state.comentarios, novoComentario],
+         novoComentario: { nome: '', email: '', mensagem: '' }
       })
    }
 
