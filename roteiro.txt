@@ -16,7 +16,7 @@ na agora de enviar aparece mensagem cannot
 
 ainda nao é possivel alterar valores nas entradas campos
 
-
+imprimi mas nao atualiza o estado
 
 
 

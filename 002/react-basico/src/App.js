@@ -31,6 +31,12 @@ class App extends Component {
       })
    }
 
+   digitacaodoNome = evento => {
+      console.log(evento)
+      console.log(evento.target)
+      console.log(evento.target.value)
+   }
+
    render() {
       return (
          <div>
@@ -45,7 +51,7 @@ class App extends Component {
             <form method="post" onSubmit={this.adicionarComentario} >
                <h2>Adicionar Comentário</h2>
                <div >
-                  <input type="text" name="nome" placeholder="Digite seu nome" value={this.state.novoComentario.nome} />
+                  <input type="text" name="nome" placeholder="Digite seu nome" value={this.state.novoComentario.nome} onChange={this.digitacaodoNome} />
                </div>
                <div >
                   <input type="email" name="email" placeholder="Digite seu email" value={this.state.novoComentario.email} />
