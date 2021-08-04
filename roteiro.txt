@@ -20,7 +20,7 @@ imprimi mas nao atualiza o estado
 
 seta o campo
 
-
+adicionando normalmente, mas o campo não limpa
 
 
 

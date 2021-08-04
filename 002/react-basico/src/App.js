@@ -19,9 +19,7 @@ class App extends Component {
       evento.preventDefault()
       console.log('Adicionando comentário...')
 
-      const novoComentario = {
-         nome: 'Silas', email: 'silas@gmail.com', data: new Date(), mensagem: 'bacana!'
-      }
+      const novoComentario = {...this.state.novoComentario, data: new Date()}
       
       this.setState({
          comentarios: [...this.state.comentarios, novoComentario]
