@@ -38,7 +38,19 @@ class App extends Component {
                </Comentario>
            ))}
 
-           <button onClick={this.adicionarComentario} >Adicionar comentário</button>   
+            <form method="post" onSubmit={this.adicionarComentario} >
+               <h2>Adicionar Comentário</h2>
+               <div >
+                  <input type="text" name="nome" placeholder="Digite seu nome" />
+               </div>
+               <div >
+                  <input type="email" name="email" placeholder="Digite seu email" />
+               </div>
+               <div >
+                  <textarea name="mensagem" rows="4" />
+               </div>
+               <button type="submit" >Adicionar Comentário</button>
+            </form>
          </div> 
       )
       
