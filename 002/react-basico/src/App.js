@@ -42,6 +42,7 @@ class App extends Component {
    render() {
       return (
          <div class="App" >
+           <h1>Meu Projeto</h1>
            {this.state.comentarios.map((cada, indice) => (
                
                <Comentario nome={cada.nome} email={cada.email} data={cada.data} key={indice} Remover={this.removerComentario.bind(this, cada)} >
@@ -49,7 +50,7 @@ class App extends Component {
                </Comentario>
            ))}
 
-            <form method="post" onSubmit={this.adicionarComentario} >
+            <form method="post" onSubmit={this.adicionarComentario} className="Novo-Comentario" >
                <h2>Adicionar Comentário</h2>
                <div >
                   <input type="text" name="nome" placeholder="Digite seu nome" value={this.state.novoComentario.nome} onChange={this.digitacao} />
