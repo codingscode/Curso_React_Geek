@@ -41,7 +41,7 @@ class App extends Component {
 
    render() {
       return (
-         <div>
+         <div class="App" >
            <div>Oi</div>
            {this.state.comentarios.map((cada, indice) => (
                

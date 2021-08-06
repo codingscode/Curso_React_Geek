@@ -1,12 +1,31 @@
-
 * {
-    margin: 0;
-    
+    box-sizing: border-box;
+}
+ 
+body {
+    background-color: #f7fafc;
+}
+ 
+.App {
+    padding: 0 30px;
 }
 
-html {
-    padding: 3px;
-    border: solid 1px green;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
