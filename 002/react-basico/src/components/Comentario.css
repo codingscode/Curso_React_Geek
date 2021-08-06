@@ -15,4 +15,41 @@
    max-height: 80px;
 }
 
+.Comentario .conteudo {
+   margin-left: 1rem;
+   width: 100%;
+}
+
+.Comentario .conteudo .nome {
+   font-size: 1.25rem;
+   margin: .5rem 0 .25rem 0;
+   color: #2d3748;
+}
+
+.Comentario .conteudo .email {
+   color: #007bff;
+}
+
+.Comentario .conteudo .mensagem {
+   color: #4a5568;
+   margin: .5rem 0;
+}
+
+.Comentario .conteudo .data {
+   text-align: right;
+   color: #718096;
+   font-size: .75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
