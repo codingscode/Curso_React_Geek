@@ -26,7 +26,7 @@ limpa agora
 
 removendo comentarios
 
-
+colocando o 'x' no canto de cada caixa
 
 
 

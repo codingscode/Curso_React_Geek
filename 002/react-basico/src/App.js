@@ -42,7 +42,6 @@ class App extends Component {
    render() {
       return (
          <div class="App" >
-           <div>Oi</div>
            {this.state.comentarios.map((cada, indice) => (
                
                <Comentario nome={cada.nome} email={cada.email} data={cada.data} key={indice} Remover={this.removerComentario.bind(this, cada)} >
