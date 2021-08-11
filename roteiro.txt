@@ -28,10 +28,13 @@ removendo comentarios
 
 colocando o 'x' no canto de cada caixa
 
+date-fns.org
+
+no terminal:
+   npm i date-fns
 
 
-
-
+formatando data ainda nao corrigido
 
 
 
