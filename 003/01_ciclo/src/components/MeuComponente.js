@@ -31,6 +31,10 @@ class MeuComponente extends Component {
       return false  // ou true
    }
 
+   componentDidUpdate() {
+      console.log('componentDidUpdate...')
+   }
+
    adicionarNumero() {
       console.log('setState...')
       let numeroAtual = this.state.numero
