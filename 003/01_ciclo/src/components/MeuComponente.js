@@ -24,6 +24,13 @@ class MeuComponente extends Component {
       console.log('componentDidMount...')
    }
 
+   shouldComponentUpdate(nextProps, nextState) {
+      console.log('shouldComponentUpdate...')
+      console.log('estado atual', this.state)
+      console.log('proximo estado', nextState)
+      return false  // ou true
+   }
+
    adicionarNumero() {
       console.log('setState...')
       let numeroAtual = this.state.numero
