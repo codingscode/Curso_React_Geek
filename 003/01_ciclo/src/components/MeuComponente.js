@@ -14,7 +14,19 @@ class MeuComponente extends Component {
       console.log('getDerivedStateFromProps...')
       console.log(props)
       console.log(state)
-      return { numero: 10 }
+      //return { numero: 10 }
+      return null
+   }
+
+   componentDidMount() {
+      console.log('componentDidMount...')
+   }
+
+   adicionarNumero() {
+      console.log('setState...')
+      let numeroAtual = this.state.numero
+      numeroAtual += 1
+      this.setState({ numero: numeroAtual })
    }
 
    render() {
@@ -24,7 +36,7 @@ class MeuComponente extends Component {
             <p>Sou um componente</p>
             <p>{this.state.numero}</p>
             <p>{this.props.titulo}</p>
-            <p></p>
+            <button onClick={this.adicionarNumero.bind(this)} >adicionar numero</button>
          </div>
       )
    }
