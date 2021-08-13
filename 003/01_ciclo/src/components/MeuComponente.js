@@ -6,6 +6,8 @@ class MeuComponente extends Component {
        super(props)
        
        this.state = { numero: 5 }
+       this.adicionarNumero = this.adicionarNumero.bind(this)
+
        console.log('constructor...')
        console.log(props)
    }
@@ -36,7 +38,7 @@ class MeuComponente extends Component {
             <p>Sou um componente</p>
             <p>{this.state.numero}</p>
             <p>{this.props.titulo}</p>
-            <button onClick={this.adicionarNumero.bind(this)} >adicionar numero</button>
+            <button onClick={this.adicionarNumero} >adicionar numero</button>
          </div>
       )
    }
