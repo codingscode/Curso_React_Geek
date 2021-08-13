@@ -38,8 +38,16 @@ formatando data ainda nao corrigido
 
 commit anterior exemplo de ciclo
 
-ver o console idem
+ver o console idem*
 
+""
+React
+Sou um componente
+
+10
+
+olá todos
+""
 
 
 

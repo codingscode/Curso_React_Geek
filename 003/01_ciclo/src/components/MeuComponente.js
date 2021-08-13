@@ -14,6 +14,7 @@ class MeuComponente extends Component {
       console.log('getDerivedStateFromProps...')
       console.log(props)
       console.log(state)
+      return { numero: 10 }
    }
 
    render() {
