@@ -10,6 +10,12 @@ class MeuComponente extends Component {
        console.log(props)
    }
 
+   static getDerivedStateFromProps(props, state) {
+      console.log('getDerivedStateFromProps...')
+      console.log(props)
+      console.log(state)
+   }
+
    render() {
       console.log('render...')
       return (

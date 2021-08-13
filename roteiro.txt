@@ -38,7 +38,7 @@ formatando data ainda nao corrigido
 
 commit anterior exemplo de ciclo
 
-ver o console
+ver o console idem
 
 
 
