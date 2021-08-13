@@ -36,9 +36,9 @@ no terminal:
 
 formatando data ainda nao corrigido
 
+commit anterior exemplo de ciclo
 
-
-
+ver o console
 
 
 
