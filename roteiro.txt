@@ -54,8 +54,13 @@ idem
 
 clicar
 
+site reqres.in
 
-
+""
+Promise {<pending>}[[Prototype]]: 
+   Promise[[PromiseState]]: "fulfilled"
+   [[PromiseResult]]: Response
+""
 
 
 
