@@ -30,7 +30,7 @@ class Usuarios extends Component {
   componentDidMount() {
      fetch('https://reqres.in/api/users')
         .then(resposta => {
-           return resposta.text()
+           return resposta.json()
         })
         .then(dados => {
            console.log(dados)
