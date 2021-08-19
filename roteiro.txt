@@ -62,6 +62,19 @@ Promise {<pending>}[[Prototype]]:
    [[PromiseResult]]: Response
 ""
 
+""
+Response {type: "cors", url: "https://reqres.in/api/users", redirected: false, status: 200, ok: true, …}
+body: (...)
+bodyUsed: false
+headers: Headers {}
+ok: true
+redirected: false
+status: 200
+statusText: ""
+type: "cors"
+url: "https://reqres.in/api/users"
+[[Prototype]]: Response
+""
 
 
 
