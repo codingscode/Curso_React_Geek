@@ -33,7 +33,7 @@ class Usuarios extends Component {
            return resposta.json()
         })
         .then(dados => {
-           console.log(dados)
+           console.log(dados.data)
         })
      
   }
