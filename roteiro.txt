@@ -112,6 +112,7 @@ apagar e ver console
 Response {type: "cors", url: "https://reqres.in/api/users/5", redirected: false, status: 204, ok: true, …}
 ""
 
+network -> xhr -> headers
 
 
 
