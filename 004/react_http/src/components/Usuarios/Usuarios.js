@@ -35,13 +35,14 @@ class Usuarios extends Component {
         .then(dados => {
            console.log(dados.data)
 
-           const usuarios = dados.data.map(cada => {
-              return {
+           const usuarios = dados.data.map(cada => (
+              {
                  id: cada.id, nome: cada.first_name, sobrenome: cada.last_name, email: cada.email
               }
-           })
+           ))
            
            console.log(usuarios)
+           this.setState({ usuarios: usuarios })
         })
      
   }
