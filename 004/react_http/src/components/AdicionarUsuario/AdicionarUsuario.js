@@ -22,11 +22,19 @@ class AdicionarUsuario extends Component {
 
   onSubmitHandler(event) {
     event.preventDefault()
-    const id = Math.floor(Math.random() * 1000)
-    const usuario = { ...this.state.usuario, id }
+    
+    const usuario = this.state.usuario
 
-    this.setState({ usuario: { nome: '', sobrenome: '', email: '' } })
-    this.props.adicionarUsuario(usuario)
+    fetch('https://reqres.in/api/users', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(usuario) })
+       .then(resposta => resposta.json())
+       .then(dados => {
+          console.log(dados)
+
+
+          this.setState({ usuario: { nome: '', sobrenome: '', email: '' } })
+          this.props.adicionarUsuario(dados)
+       })
+
   }
 
   render() {

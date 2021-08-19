@@ -91,9 +91,18 @@ url: "https://reqres.in/api/users"
 
 aparece a lista
 
+network -> xhr
 
-
-
+fazer envio
+""
+{nome: "aladin", sobrenome: "del13", email: "aladin@gmail.com", id: "58", createdAt: "2021-08-19T13:26:46.048Z"}
+createdAt: "2021-08-19T13:26:46.048Z"
+email: "aladin@gmail.com"
+id: "58"
+nome: "aladin"
+sobrenome: "del13"
+[[Prototype]]: Object
+""
 
 
 

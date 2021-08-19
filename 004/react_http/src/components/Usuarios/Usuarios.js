@@ -33,7 +33,7 @@ class Usuarios extends Component {
            return resposta.json()
         })
         .then(dados => {
-           console.log(dados.data)
+           //console.log(dados.data)
 
            const usuarios = dados.data.map(cada => (
               {
@@ -41,7 +41,7 @@ class Usuarios extends Component {
               }
            ))
            
-           console.log(usuarios)
+           //console.log(usuarios)
            this.setState({ usuarios: usuarios })
         })
      
