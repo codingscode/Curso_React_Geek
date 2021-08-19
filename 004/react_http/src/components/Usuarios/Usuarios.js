@@ -28,9 +28,13 @@ class Usuarios extends Component {
   }
 
   componentDidMount() {
-     fetch('https://reqres.in/api/users').then((resposta) => {
-        console.log(resposta)
-     })
+     fetch('https://reqres.in/api/users')
+        .then(resposta => {
+           return resposta.text()
+        })
+        .then(dados => {
+           console.log(dados)
+        })
      
   }
 
