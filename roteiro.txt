@@ -106,7 +106,11 @@ sobrenome: "del13"
 
 network -> xhr -> headers
 
+apagar e ver console
 
+""
+Response {type: "cors", url: "https://reqres.in/api/users/5", redirected: false, status: 204, ok: true, …}
+""
 
 
 
