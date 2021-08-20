@@ -114,8 +114,11 @@ Response {type: "cors", url: "https://reqres.in/api/users/5", redirected: false
 
 network -> xhr -> headers
 
+--------
 
+hooks
 
+ver components em react tools no browser
 
 
 
