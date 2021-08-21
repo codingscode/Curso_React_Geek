@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 import Usuarios from './components/Usuarios/Usuarios'
 
@@ -10,7 +10,7 @@ function App() {
         <Usuarios />
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

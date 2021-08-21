@@ -120,7 +120,7 @@ hooks
 
 ver components em react tools no browser
 
-
+ver o console
 
 
 
