@@ -122,6 +122,8 @@ ver components em react tools no browser
 
 ver o console
 
+pára de fazer renderização o tempo todo
+
 
 
 

@@ -26,7 +26,7 @@ function Usuarios(props) {
            setUsuarios(usuarios)
         })
  
-  })
+  }, [])
 
   const adicionarUsuario = (usuario) => {
      setUsuarios((atuais) => [atuais, usuario])
