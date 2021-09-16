@@ -32,12 +32,25 @@ function App() {
               <Route path="/adicionar" >
                  <AdicionarUsuario />
               </Route>
+              <Route path="*" >
+                 <PaginaNaoEncontrada />
+              </Route>
            </Switch>
            
          </main>
        </div>
     </Router>
   )
+}
+
+function PaginaNaoEncontrada() {
+
+   return (
+      <>
+         <h1>404</h1>
+         <p>Página não encontrada</p>
+      </>
+   )
 }
 
 export default App

@@ -137,7 +137,7 @@ colocando primeiro componente do '/', clicando nos outros eles não aparecem, s�
 
 pra resolver ou se coloca por último ou colocase o atributo 'exact' no primeiro Route
 
-
+http://localhost:3000/qualquercoisa
 
 
 
