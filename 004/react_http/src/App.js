@@ -15,7 +15,7 @@ function App() {
          <header>
             <nav>
                <ul>
-                  <li><NavLink to="/" className="active" >Início</NavLink></li>
+                  <li><NavLink to="/" exact >Início</NavLink></li>
                   <li><NavLink to="/usuarios" >Usuários Cadastrados</NavLink></li>
                   <li><NavLink to="/adicionar" >Adicionar Usuário</NavLink></li>                              
                </ul>
