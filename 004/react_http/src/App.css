@@ -47,9 +47,16 @@
    justify-content: center;
 }
 
+.App nav ul li {
+   display: block;
+}
 
-
-
+.App nav ul li a {
+   display: block;
+   padding: 1rem;
+   color: green;
+   text-decoration: none;
+}
 
 
 
