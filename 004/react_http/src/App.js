@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 
-import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-dom'
 
 import AdicionarUsuario from './components/AdicionarUsuario/AdicionarUsuario'
 import Usuarios from './components/Usuarios/Usuarios'
@@ -15,9 +15,9 @@ function App() {
          <header>
             <nav>
                <ul>
-                  <li><Link to="/" className="active" >Início</Link></li>
-                  <li><Link to="/usuarios" >Usuários Cadastrados</Link></li>
-                  <li><Link to="/adicionar" >Adicionar Usuário</Link></li>                              
+                  <li><NavLink to="/" className="active" >Início</NavLink></li>
+                  <li><NavLink to="/usuarios" >Usuários Cadastrados</NavLink></li>
+                  <li><NavLink to="/adicionar" >Adicionar Usuário</NavLink></li>                              
                </ul>
             </nav>
          </header>
