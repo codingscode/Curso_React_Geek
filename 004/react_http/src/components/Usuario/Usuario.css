@@ -18,7 +18,7 @@
 }
 
 .Usuario ul li strong {
-  color: #DA3C78;
+  color: #2317c4;
 }
 
 .Usuario button {
@@ -42,5 +42,5 @@
 .Usuario button:hover,
 .Usuario button:focus {
   color: #FFF;
-  background-color: #FF6CA8;
+  background-color: #d85519;
 }

@@ -1,4 +1,4 @@
-.App {
+.App main {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -8,25 +8,48 @@
 }
 
 @media (min-width: 576px) {
-  .App {
+  .App main {
     max-width: 540px;
   }
 }
 
 @media (min-width: 768px) {
-  .App {
+  .App main {
     max-width: 720px;
   }
 }
 
 @media (min-width: 992px) {
-  .App {
+  .App main {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  .App {
+  .App main {
     max-width: 1140px;
   }
 }
+
+.App nav {
+   padding: 0;
+   background-color: lightgreen;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,14 +2,14 @@
   margin: 2rem 0;
   padding: 1.25rem;
   background-color: #FFF;
-  background-color: #FFEBF3;
+  background-color: #ebf0ff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, .14);
 }
 
 .AdicionarUsuario h2 {
   font-size: 1.25rem;
   text-transform: uppercase;
-  color: #CA2C68;
+  color: #2cca2c;
   margin: .25rem 0;
 }
 
@@ -41,7 +41,7 @@
   line-height: 1.5;
   color: #495057;
   background-color: #FFF;
-  border: 1px solid #FFBCD8;
+  border: 1px solid #ce4b23;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -50,7 +50,7 @@
   color: #FFF;
   cursor: pointer;
   display: inline-block;
-  background-color: #FF6CA8;
+  background-color: #a0a6fa;
   text-align: center;
   vertical-align: middle;
   border: 1px solid transparent;
@@ -65,10 +65,10 @@
 
 .AdicionarUsuario input:focus, .AdicionarUsuario button:focus {
   outline: 0;
-  border-color: #FF8CC8;
+  border-color: #08a148;
   box-shadow: 0 0 0 .2rem rgba(255, 188, 216, .5);
 }
 
 .AdicionarUsuario button:hover {
-  background-color: #DA3C78;
+  background-color: #288a1f;
 }
