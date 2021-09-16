@@ -47,8 +47,8 @@ function Usuarios(props) {
   return (
     <>
       <AdicionarUsuario adicionarUsuario={adicionarUsuario} />
-      {usuarios.map(usuario => (
-         <Usuario key={usuario.id}
+      {usuarios.map((usuario, i) => (
+         <Usuario key={i}
            usuario={usuario}
            removerUsuario={() => removerUsuario(usuario)}
          />

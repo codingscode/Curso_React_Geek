@@ -129,9 +129,9 @@ pára de fazer renderização o tempo todo
 
 rotas
 
+npm install react-router-dom
 
-
-
+ver abas feitas
 
 
 
