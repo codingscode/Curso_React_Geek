@@ -23,14 +23,14 @@ function App() {
          </header>
          <main>
            <Switch>
+              <Route path="/" >
+                 <Inicio />
+              </Route>
               <Route path="/usuarios" >
                  <Usuarios />
               </Route>
               <Route path="/adicionar" >
                  <AdicionarUsuario />
-              </Route>
-              <Route path="/" >
-                 <Inicio />
               </Route>
            </Switch>
            

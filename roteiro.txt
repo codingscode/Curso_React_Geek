@@ -133,7 +133,7 @@ npm install react-router-dom
 
 ver abas feitas
 
-
+colocando primeiro componente do '/', clicando nos outros eles não aparecem, só muda em cima
 
 
 
