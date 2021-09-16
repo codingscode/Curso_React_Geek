@@ -54,9 +54,30 @@
 .App nav ul li a {
    display: block;
    padding: 1rem;
-   color: green;
+   color: rgb(50, 41, 172);
    text-decoration: none;
 }
+
+.App nav ul li a:hover {
+   background-color: rgb(117, 196, 117);
+}
+
+.App nav ul li a.active {
+   background-color: rgba(180, 95, 25, 0.4);
+   color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
