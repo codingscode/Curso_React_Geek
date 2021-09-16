@@ -135,7 +135,7 @@ ver abas feitas
 
 colocando primeiro componente do '/', clicando nos outros eles não aparecem, só muda em cima
 
-
+pra resolver ou se coloca por último ou colocase o atributo 'exact' no primeiro Route
 
 
 

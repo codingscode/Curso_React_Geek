@@ -23,7 +23,7 @@ function App() {
          </header>
          <main>
            <Switch>
-              <Route path="/" >
+              <Route path="/" exact >
                  <Inicio />
               </Route>
               <Route path="/usuarios" >
