@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 
 function DetalhesUsuario() {
@@ -9,6 +9,7 @@ function DetalhesUsuario() {
    return (
       <>
          <h1>ID: {id}</h1>
+         <Link to="/usuarios" >Voltar</Link>
       </>
    )
 }
