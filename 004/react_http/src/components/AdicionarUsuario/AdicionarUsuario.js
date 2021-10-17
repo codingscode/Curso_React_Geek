@@ -15,15 +15,15 @@ function AdicionarUsuario() {
       const usuario = { nome: nome, sobrenome: sobrenome, email: email }
   
       fetch('https://reqres.in/api/users', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(usuario) })
-         .then(resposta => resposta.json())
-         .then(dados => {
-            console.log(dados)
-  
-            setNome('')
-            setSobrenome('')
-            setEmail('')
-            /* props.adicionarUsuario(dados) */
+         .then(resposta => { 
+            if (resposta.ok) {
+               setNome('')
+               setSobrenome('')
+               setEmail('')
+               alert('usuário cadastrado com sucesso!')
+            }    
          })
+         
   
    }
  
