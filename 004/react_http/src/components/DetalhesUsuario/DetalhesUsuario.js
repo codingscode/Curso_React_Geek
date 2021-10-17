@@ -4,19 +4,19 @@ import { Link, useParams } from 'react-router-dom'
 
 function DetalhesUsuario() {
 
-   const { id } = useParams()
+   const { codigo } = useParams()
 
    const [usuario, setUsuario] = useState({})
 
    useEffect(() => {
-      fetch(`https://reqres.in/api/users/${id}`)
+      fetch(`https://reqres.in/api/users/${codigo}`)
          .then(resposta => resposta.json())
          .then(dados => {
             if (dados.data) {
                setUsuario({ id: dados.data.id, nome: dados.data.first_name, sobrenome: dados.data.last_name, email: dados.data.email, foto: dados.data.avatar })
             }
          })
-   }, [id])
+   }, [codigo])
 
    if (usuario.nome !== undefined) {
       return (

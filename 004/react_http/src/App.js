@@ -27,7 +27,7 @@ function App() {
               <Route path="/" exact >
                  <Inicio />
               </Route>
-              <Route path="/usuarios/:id" >
+              <Route path="/usuarios/:codigo" >
                  <DetalhesUsuario />
               </Route>
               <Route path="/usuarios" >
