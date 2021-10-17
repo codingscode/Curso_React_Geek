@@ -6,6 +6,7 @@ import { BrowserRouter as Router, NavLink, Switch, Route } from 'react-router-do
 import AdicionarUsuario from './components/AdicionarUsuario/AdicionarUsuario'
 import Usuarios from './components/Usuarios/Usuarios'
 import Inicio from './components/Inicio/Inicio'
+import DetalhesUsuario from './components/DetalhesUsuario/DetalhesUsuario'
 
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
            <Switch>
               <Route path="/" exact >
                  <Inicio />
+              </Route>
+              <Route path="/usuarios/:id" >
+                 <DetalhesUsuario />
               </Route>
               <Route path="/usuarios" >
                  <Usuarios />
