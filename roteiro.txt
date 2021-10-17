@@ -151,7 +151,10 @@ aparece um link em cada usuario lista
 
 link de voltar
 
-
+ver 
+   http://localhost:3000/usuarios/6
+   http://localhost:3000/usuarios/7
+   http://localhost:3000/usuarios/1000
 
 
 
