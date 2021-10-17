@@ -144,7 +144,8 @@ tentar cadastrar
 
 ver http://localhost:3000/usuarios/4
 
-
+ver http://localhost:3000/usuarios/3
+    aparece o id
 
 
 

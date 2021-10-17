@@ -1,11 +1,14 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 
 function DetalhesUsuario() {
 
+   const { id } = useParams()
+
    return (
       <>
-         Olá
+         <h1>ID: {id}</h1>
       </>
    )
 }
