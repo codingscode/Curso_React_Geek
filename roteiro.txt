@@ -161,6 +161,7 @@ ver
 
 no terminal:
    npx create-react-app frutaria
+   npm i redux react-redux
 
 
 
