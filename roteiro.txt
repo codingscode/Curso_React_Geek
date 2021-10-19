@@ -157,9 +157,10 @@ ver
    http://localhost:3000/usuarios/1000
 
 
+---------------------------------------
 
-
-
+no terminal:
+   npx create-react-app frutaria
 
 
 
