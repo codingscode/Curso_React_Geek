@@ -164,6 +164,7 @@ no terminal:
    npm i redux react-redux
 
 
+já adicionar
 
 
 

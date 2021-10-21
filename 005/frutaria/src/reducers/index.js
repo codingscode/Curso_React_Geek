@@ -1,6 +1,6 @@
 
 import { combineReducers } from 'redux'
-import { reducers as frutaReducers } from './fruta.reducer'
+import { reducers as frutaReducers } from './frutas.reducer'
 
 
 const reducers = combineReducers({

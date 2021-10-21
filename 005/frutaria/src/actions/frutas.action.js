@@ -6,7 +6,7 @@ const actions = {
       type: actionsTypes.ADICIONAR_FRUTA,
       payload: fruta
    }),
-   adicionar: fruta => ({
+   remover: fruta => ({
       type: actionsTypes.REMOVER_FRUTA,
       payload: fruta
    })

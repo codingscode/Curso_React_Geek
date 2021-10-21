@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { actions } from '../actions/frutas.action'
 
 
 
@@ -6,6 +8,8 @@ const AdicionaFruta = () => {
 
    const [nome, setNome] = useState('')
    const [quantidade, setQuantidade] = useState(0)
+   
+   const dispatch = useDispatch()
    
    const adicionarFruta = evento => {
    
@@ -16,7 +20,7 @@ const AdicionaFruta = () => {
       
       console.log(`Adicionar Fruta`, fruta)
       
-      //alert('Adicionar Fruta')
+      dispatch(actions.adicionar(fruta))
    }
    
    return (
