@@ -166,7 +166,7 @@ no terminal:
 
 já adicionar
 
-
+já remove
 
 
 
