@@ -182,7 +182,8 @@ no terminal da pasta:
    npm i formik
 
 
-
+alerta
+       {"nome":"Aladin","email":"aladinda13@gmail.com","nascimento":"2018-08-03"}
 
 
 
