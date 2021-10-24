@@ -178,7 +178,8 @@ acrescentar na lista e ver a extensao dev redux
 
 formik
 
-
+no terminal da pasta:
+   npm i formik
 
 
 
