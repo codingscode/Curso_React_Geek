@@ -192,9 +192,9 @@ cor mudada
 
 observar ficar preenchendo e apagando
 
+testar email
 
-
-
+testar cada campo
 
 
 

@@ -62,9 +62,14 @@ input:focus, button:focus {
    color: #dc3545;
 }
 
+.eh-invalido {
+   border-color: #dc3545;
+}
 
-
-
+.eh-invalido:focus {
+   border-color: #dc3445;
+   box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
 
 
 
