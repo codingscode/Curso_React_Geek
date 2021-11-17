@@ -54,3 +54,34 @@ input:focus, button:focus {
    border-color: #884ea0;
    box-shadow: 0 0 0 0.2rem rgba(155, 89, 182, 0.5);
 }
+
+.feedback-invalido {
+   width: 100%;
+   margin-top: 0.25rem;
+   font-size: 0.85rem;
+   color: #dc3545;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
