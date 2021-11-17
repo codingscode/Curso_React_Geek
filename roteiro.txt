@@ -186,6 +186,7 @@ alerta
        {"nome":"Aladin","email":"aladinda13@gmail.com","nascimento":"2018-08-03"}
 
 
+na página clicar em 'adicionar' e ver os avisos em baixo de cada campo
 
 
 
