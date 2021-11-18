@@ -3,18 +3,19 @@ import { Formik, Field, useField } from 'formik'
 
 
 
-const Campo = props => {
+const Campo = ({ label, ...props}) => {
    const [field, meta] = useField(props)
 
 
 
    return (
-      <>
+      <div className="form-group">
+         <label htmlFor={props.id} >{label}</label>
          <input {...field} {...props} className={meta.error && meta.touched ? 'eh-invalido' : ''} />
          {meta.error && meta.touched ? (
             <div className="feedback-invalido" >{meta.error}</div>
          ): null}         
-      </>
+      </div>
    )
 }
 
@@ -43,19 +44,9 @@ const AdicionaCliente = () => {
          }} >
             {(props) => (
                <form onSubmit={props.handleSubmit} noValidate >
-                  <div className="form-group">
-                     <label htmlFor="nome">Nome</label>
-                     <Campo type="text" id="nome" name="nome"  />
-                     
-                  </div>
-                  <div className="form-group">
-                     <label htmlFor="email">Email</label>
-                     <Campo type="email" id="email" name="email" />
-                  </div>
-                  <div className="form-group">
-                     <label htmlFor="date">Data de Nascimento</label>
-                     <Campo type="date" id="nascimento" name="nascimento" />
-                  </div>
+                  <Campo type="text" id="nome" name="nome" label="Nome" />
+                  <Campo type="email" id="email" name="email" label="Email" />
+                  <Campo type="date" id="nascimento" name="nascimento" label="Data de Nascimento" />
                   <button type="submit">Adicionar</button>
                </form>
             )}
