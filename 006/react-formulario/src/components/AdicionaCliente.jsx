@@ -1,6 +1,22 @@
 import React from 'react'
-import { Formik, Field } from 'formik'
+import { Formik, Field, useField } from 'formik'
 
+
+
+const Campo = props => {
+   const [field, meta] = useField(props)
+
+
+
+   return (
+      <>
+         <input {...field} {...props} className={meta.error && meta.touched ? 'eh-invalido' : ''} />
+         {meta.error && meta.touched ? (
+            <div className="feedback-invalido" >{meta.error}</div>
+         ): null}         
+      </>
+   )
+}
 
 
 const AdicionaCliente = () => {
@@ -29,18 +45,16 @@ const AdicionaCliente = () => {
                <form onSubmit={props.handleSubmit} noValidate >
                   <div className="form-group">
                      <label htmlFor="nome">Nome</label>
-                     <Field type="text" id="nome" name="nome" className={props.errors.nome && props.touched.nome ? 'eh-invalido' : '' } />
-                     {props.errors.nome &&props.touched.nome ? (<div className="feedback-invalido" >{props.errors.nome}</div>) : null}
+                     <Campo type="text" id="nome" name="nome"  />
+                     
                   </div>
                   <div className="form-group">
                      <label htmlFor="email">Email</label>
-                     <Field type="email" id="email" name="email" className={props.errors.email && props.touched.email ? 'eh-invalido' : '' } />
-                     {props.errors.email &&props.touched.email ? (<div className="feedback-invalido" >{props.errors.email}</div>) : null}
+                     <Campo type="email" id="email" name="email" />
                   </div>
                   <div className="form-group">
                      <label htmlFor="date">Data de Nascimento</label>
-                     <Field type="date" id="nascimento" name="nascimento" className={props.errors.nascimento && props.touched.nascimento ? 'eh-invalido' : '' } />
-                     {props.errors.nascimento &&props.touched.nascimento ? (<div className="feedback-invalido" >{props.errors.nascimento}</div>) : null}
+                     <Campo type="date" id="nascimento" name="nascimento" />
                   </div>
                   <button type="submit">Adicionar</button>
                </form>

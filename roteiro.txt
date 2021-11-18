@@ -196,7 +196,7 @@ testar email
 
 testar cada campo
 
-funciona da mesma maneira
+funciona da mesma maneira *
 
 
 
