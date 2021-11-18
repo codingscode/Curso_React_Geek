@@ -1,5 +1,5 @@
 import React from 'react'
-import { Formik } from 'formik'
+import { Formik, Field } from 'formik'
 
 
 
@@ -29,17 +29,17 @@ const AdicionaCliente = () => {
                <form onSubmit={props.handleSubmit} noValidate >
                   <div className="form-group">
                      <label htmlFor="nome">Nome</label>
-                     <input type="text" id="nome" name="nome" value={props.values.nome} onChange={props.handleChange} onBlur={props.handleBlur} className={props.errors.nome && props.touched.nome ? 'eh-invalido' : '' } />
+                     <Field type="text" id="nome" name="nome" className={props.errors.nome && props.touched.nome ? 'eh-invalido' : '' } />
                      {props.errors.nome &&props.touched.nome ? (<div className="feedback-invalido" >{props.errors.nome}</div>) : null}
                   </div>
                   <div className="form-group">
                      <label htmlFor="email">Email</label>
-                     <input type="email" id="email" name="email" value={props.values.email} onChange={props.handleChange} onBlur={props.handleBlur} className={props.errors.email && props.touched.email ? 'eh-invalido' : '' } />
+                     <Field type="email" id="email" name="email" className={props.errors.email && props.touched.email ? 'eh-invalido' : '' } />
                      {props.errors.email &&props.touched.email ? (<div className="feedback-invalido" >{props.errors.email}</div>) : null}
                   </div>
                   <div className="form-group">
                      <label htmlFor="date">Data de Nascimento</label>
-                     <input type="date" id="nascimento" name="nascimento" value={props.values.nascimento} onChange={props.handleChange} onBlur={props.handleBlur} className={props.errors.nascimento && props.touched.nascimento ? 'eh-invalido' : '' } />
+                     <Field type="date" id="nascimento" name="nascimento" className={props.errors.nascimento && props.touched.nascimento ? 'eh-invalido' : '' } />
                      {props.errors.nascimento &&props.touched.nascimento ? (<div className="feedback-invalido" >{props.errors.nascimento}</div>) : null}
                   </div>
                   <button type="submit">Adicionar</button>

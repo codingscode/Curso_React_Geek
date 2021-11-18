@@ -196,6 +196,8 @@ testar email
 
 testar cada campo
 
+funciona da mesma maneira
+
 
 
 
