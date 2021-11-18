@@ -27,8 +27,12 @@ const AdicionaCliente = () => {
          .required('O nome é obrigatório')
          .min(10, 'O nome deve ter no mínimo 10 caracteres')
          .max(30, 'O nome deve ter no máximo 30 caracteres'),
-      email: yup.string().required('O email é obrigatório'),
-      nascimento: yup.date().required('A data de nascimento é obrigatória')
+      email: yup.string()
+         .required('O email é obrigatório')
+         .email('O email é inválido'),
+      nascimento: yup.date()
+         .required('A data de nascimento é obrigatória')
+         .max(new Date(), 'Você não pode ter nascido no futuro...') 
    })
 
 

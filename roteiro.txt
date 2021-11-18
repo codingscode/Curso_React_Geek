@@ -203,7 +203,7 @@ no terminal:
     npm i yup
 
 
-testar cada campo
+testar cada campo*
 
 
 
