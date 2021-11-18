@@ -199,9 +199,11 @@ testar cada campo
 funciona da mesma maneira
 
 
+no terminal:
+    npm i yup
 
 
-
+testar cada campo
 
 
 
