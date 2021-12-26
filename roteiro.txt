@@ -240,7 +240,9 @@ ver: https://frutaria-hp.herokuapp.com
 
 terminal da pasta escolhida:
    npm i serve
-   
+   git add .
+   git commit -am "nomecommit"
+   git push heroku master
 
 
 
