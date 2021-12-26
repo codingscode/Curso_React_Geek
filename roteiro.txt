@@ -205,15 +205,23 @@ no terminal:
 
 testar cada campo*
 
+---------------------------------------------
+
+deploy
+
+escolher pasta 005/frutaria no terminal:
+    npm run build
+    npm install -g serve
+    serve -s build
 
 
-
-
-
-
-
-
-
+mensagem
+"""
+Serving!                                         │
+   │                                                    │
+   │   - Local:            http://localhost:35535       │
+   │   - On Your Network:  http://192.168.15.98:35535  
+"""
 
 
 
