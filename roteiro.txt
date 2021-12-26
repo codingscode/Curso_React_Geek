@@ -223,12 +223,24 @@ Serving!                                         │
    │   - On Your Network:  http://192.168.15.98:35535  
 """
 
+método de deploy -> Heroku Git:
+    no terminal da pasta:
+    heroku login
+    heroku git:clone -a nomeprojeto
+    git add .
+    git commit -am "nomecommit"
+    git push heroku master
+    
+    
 
 
+sucesso
+ver: https://frutaria-hp.herokuapp.com
+     https://git.heroku.com/frutaria-hp.git
 
-
-
-
+terminal da pasta escolhida:
+   npm i serve
+   
 
 
 
